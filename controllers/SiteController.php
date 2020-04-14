@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\search\UserSearch;
 use yii\web\Controller;
 
 /**
@@ -14,10 +15,12 @@ class SiteController extends Controller
     /**
      * Отображение главной страницы
      *
-     * @return string
+     * @return string Html-код страницы
      */
-    public function actionIndex()
+    public function actionIndex(): string
     {
-        return $this->render('index');
+        $userSearch = new UserSearch();
+
+        return $this->render('index', ['userSearch' => $userSearch]);
     }
 }

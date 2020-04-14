@@ -1,0 +1,47 @@
+a {
+    color: #33f;
+    outline: 0;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: #99f;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+}
+
+body {
+    color: black;
+    font-family: Arial;
+}
+
+header {
+    text-align: center;
+}
+
+    header a {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+.content {
+    text-align: center;
+}
+
+table#users button.delete {
+    padding: 0 4px;
+}
+
+button#add {
+    margin-top: 30px;
+    padding: 5px 10px;
+    font-weight: bold;
+}

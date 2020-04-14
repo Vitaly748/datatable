@@ -30,3 +30,4 @@ composer.phar
 # runtime
 /runtime/*
 !/runtime/.gitkeep
+/web/assets/*

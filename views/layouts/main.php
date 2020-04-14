@@ -1,5 +1,6 @@
 <?php
 
+use app\assets\MainAsset;
 use yii\bootstrap4\Html;
 use yii\web\View;
 
@@ -9,6 +10,8 @@ use yii\web\View;
  */
 
 $title = Yii::$app->name;
+MainAsset::register($this);
+
 $this->beginPage();
 ?>
 <!DOCTYPE html>
@@ -25,11 +28,13 @@ $this->beginPage();
     <body>
         <?php $this->beginBody(); ?>
 
-        <header>
+        <header class="container">
             <a href="/"><?= $title; ?></a>
         </header>
 
-        <?= $content; ?>
+        <div class="content container">
+            <?= $content; ?>
+        </div>
 
         <?php $this->endBody(); ?>
     </body>

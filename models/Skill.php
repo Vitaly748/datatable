@@ -48,6 +48,19 @@ class Skill extends ActiveRecord
     }
 
     /**
+     * @inheritDoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'name' => 'Название',
+            'created_at' => 'Дата создания',
+            'updated_at' => 'Дата редактирования',
+        ];
+    }
+
+    /**
      * Получение объекта SQL-запроса для получения моделей данных связок Пользовать-Навык текущего навыка
      *
      * @return ActiveQuery Объект SQL-запроса

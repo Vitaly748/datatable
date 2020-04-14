@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    outline: 0;
+    vertical-align: top;
+}
+
+header, nav, aside, footer {
+    display: block;
+    position: relative;
+}
+
+ul {
+    font-size: 0;
+    letter-spacing: -1px;
+    line-height: 0;
+    list-style: none;
+}
+
+ul li {
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: none;
+    padding:0;
+    margin:0;
+}
+
+a, p, label {
+    display: inline-block;
+}

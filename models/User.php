@@ -3,7 +3,6 @@
 namespace app\models;
 
 use app\helpers\ModelHelper;
-use Exception;
 use Throwable;
 use Yii;
 use yii\base\InvalidConfigException;
@@ -52,6 +51,20 @@ class User extends ActiveRecord
             [['name'], 'required'],
             [['name'], 'string', 'max' => 64],
             [['city_id'], 'exist', 'targetClass' => City::class, 'targetAttribute' => 'id'],
+        ];
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'name' => 'Имя',
+            'city_id' => 'Город',
+            'created_at' => 'Дата создания',
+            'updated_at' => 'Дата редактирования',
         ];
     }
 
